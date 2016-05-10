@@ -3,67 +3,22 @@
 @import "mixins";
 
 /* Phones */
-@media only screen and (min-width : 0px) {
-  .container {
-    display: block;
-    width: 96%;
-    margin: 0 2%;
-  }
-  .container-extended {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .row {
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .phone-col-1 {
-    @include column();
-    min-width: 10%;
-    width: 10%;
-  }
-  .phone-col-2 {
-    @include column();
-    width: 20%;
-  }
-  .phone-col-3 {
-    @include column();
-    width: 30%;
-  }
-  .phone-col-4 {
-    @include column();
-    width: 40%;
-  }
-  .phone-col-5 {
-    @include column();
-    width: 50%;
-  }
-  .phone-col-6 {
-    @include column();
-    width: 60%;
-  }
-  .phone-col-7 {
-    @include column();
-    width: 70%;
-  }
-  .phone-col-8 {
-    @include column();
-    width: 80%;
-  }
-  .phone-col-9 {
-    @include column();
-    width: 90%;
-  }
-  .phone-col-10 {
-    @include column();
-    width: 100%;
-  }
+.container {
+  width: 96%;
+  margin: 0 2%;
+}
+.container-extended {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.row {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
+@import "phone";
 @import "tablet";
 @import "desktop";
 @import "wide";
