@@ -18,8 +18,11 @@ The column class names follow the style `.[device]-col-[size]`. [device] is phon
 
 ### Responsive Hide
 `.phone-hide` will hide an element and its children on phone sized devices but show on others
+
 `.tablet-hide` will hide an element and its children on tablet sized devices but show on others
+
 `.desktop-hide` will hide an element and its children on desktop sized devices but show on others
+
 `.wide-hide` will hide an element and its children on wide sized devices but show on others
 
 ## Example Usage
