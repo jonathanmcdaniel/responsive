@@ -1,6 +1,7 @@
 // !compileOnSave
-/* Desktops */
-@media only screen and (min-width : 992px) {
+
+// Desktops
+@media only screen and (min-width : $desktop-breakpoint) {
   .desktop-col-1 {
     @include column();
     min-width: 10%;
@@ -41,5 +42,12 @@
   .desktop-col-10 {
     @include column();
     width: 100%;
+  }
+
+  .phone-hide {
+    display: block;
+  }
+  .desktop-hide {
+    display: none;
   }
 }

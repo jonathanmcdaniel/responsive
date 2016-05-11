@@ -1,23 +1,9 @@
 // compileCompressed: ../css/$1.min.css
 @import "reset";
+@import "variables";
 @import "mixins";
 
-/* Phones */
-.container {
-  width: 96%;
-  margin: 0 2%;
-}
-.container-extended {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.row {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
+@import "base";
 @import "phone";
 @import "tablet";
 @import "desktop";

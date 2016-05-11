@@ -1,5 +1,6 @@
 // !compileOnSave
-/* Phones */
+
+// Phones
 .phone-col-1 {
   @include column();
   min-width: 10%;
@@ -40,4 +41,8 @@
 .phone-col-10 {
   @include column();
   width: 100%;
+}
+
+.phone-hide {
+  display: none;
 }

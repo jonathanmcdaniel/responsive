@@ -1,6 +1,7 @@
 // !compileOnSave
-/* Wide Screens */
-@media only screen and (min-width : 1200px) {
+
+// Wide Screens
+@media only screen and (min-width : $wide-breakpoint) {
   .wide-col-1 {
     @include column();
     min-width: 10%;
@@ -41,5 +42,12 @@
   .wide-col-10 {
     @include column();
     width: 100%;
+  }
+
+  .phone-hide {
+    display: block;
+  }
+  .wide-hide {
+    display: none;
   }
 }
