@@ -2,46 +2,11 @@
 
 // Wide Screens
 @media only screen and (min-width : $wide-breakpoint) {
-  .wide-col-1 {
-    @include column();
-    min-width: 10%;
-    width: 10%;
-  }
-  .wide-col-2 {
-    @include column();
-    width: 20%;
-  }
-  .wide-col-3 {
-    @include column();
-    width: 30%;
-  }
-  .wide-col-4 {
-    @include column();
-    width: 40%;
-  }
-  .wide-col-5 {
-    @include column();
-    width: 50%;
-  }
-  .wide-col-6 {
-    @include column();
-    width: 60%;
-  }
-  .wide-col-7 {
-    @include column();
-    width: 70%;
-  }
-  .wide-col-8 {
-    @include column();
-    width: 80%;
-  }
-  .wide-col-9 {
-    @include column();
-    width: 90%;
-  }
-  .wide-col-10 {
-    @include column();
-    width: 100%;
+
+  @for $i from 1 through $number-of-columns {
+    .wide-col-#{$i} {
+      @include column($i);
+    }
   }
 
   .phone-hide {

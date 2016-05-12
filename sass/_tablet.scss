@@ -7,46 +7,11 @@
     width: 80%;
     margin: 0 10%;
   }
-  .tablet-col-1 {
-    @include column();
-    min-width: 10%;
-    width: 10%;
-  }
-  .tablet-col-2 {
-    @include column();
-    width: 20%;
-  }
-  .tablet-col-3 {
-    @include column();
-    width: 30%;
-  }
-  .tablet-col-4 {
-    @include column();
-    width: 40%;
-  }
-  .tablet-col-5 {
-    @include column();
-    width: 50%;
-  }
-  .tablet-col-6 {
-    @include column();
-    width: 60%;
-  }
-  .tablet-col-7 {
-    @include column();
-    width: 70%;
-  }
-  .tablet-col-8 {
-    @include column();
-    width: 80%;
-  }
-  .tablet-col-9 {
-    @include column();
-    width: 90%;
-  }
-  .tablet-col-10 {
-    @include column();
-    width: 100%;
+
+  @for $i from 1 through $number-of-columns {
+    .tablet-col-#{$i} {
+      @include column($i);
+    }
   }
 
   .phone-hide {

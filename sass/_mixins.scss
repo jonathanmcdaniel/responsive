@@ -1,8 +1,9 @@
 // !compileOnSave
-@mixin column(){
+@mixin column($column){
   position: relative;
   padding: 0;
   margin: 0;
   float: left;
   min-height: 1px;
+  width: #{100% * $column / $number-of-columns};
 }
